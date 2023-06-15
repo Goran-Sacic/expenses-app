@@ -8,20 +8,22 @@ const ExpenseItem = (props) => {
   console.log("ExpenseItem evaluated by React");
   console.log("New title: " + title);
 
-  const handleClick = () => {
+  /* const handleClick = () => {
     setTitle("Updated!");
     console.log(title);
-  };
+  }; */
 
   return (
-    <Card className="expense-item">
-      <ExpenseDate date={props.date} />
-      <div className="expense-item__description">
-        <h2>{title}</h2>
-        <div className="expense-item__price">${props.amount}</div>
-      </div>
-      <button onClick={handleClick}>Change Title</button>
-    </Card>
+    <li>
+      <Card className="expense-item">
+        <ExpenseDate date={props.date} />
+        <div className="expense-item__description">
+          <h2>{title}</h2>
+          <div className="expense-item__price">${props.amount}</div>
+        </div>
+        {/* <button onClick={handleClick}>Change Title</button> */}
+      </Card>
+    </li>
   );
 };
 
