@@ -53,7 +53,7 @@ const ExpenseForm = (props) => {
         <form onSubmit={handleSubmit}>
           <div className="new-expense__controls">
             <div className="new-expense__control">
-              <label>Title</label>
+              <label>Naziv troška</label>
               <input
                 type="text"
                 value={enteredTitle}
@@ -61,7 +61,7 @@ const ExpenseForm = (props) => {
               />
             </div>
             <div className="new-expense__control">
-              <label>Amount</label>
+              <label>Iznos</label>
               <input
                 type="number"
                 min="0.01"
@@ -71,7 +71,7 @@ const ExpenseForm = (props) => {
               />
             </div>
             <div className="new-expense__control">
-              <label>Date</label>
+              <label>Datum</label>
               <input
                 type="date"
                 min="2019-01-01"
@@ -83,16 +83,16 @@ const ExpenseForm = (props) => {
           </div>
           <div className="new-expense__actions">
             <button type="button" onClick={handleCancel}>
-              Cancel
+              Prekid
             </button>
-            <button type="submit">Add Expense</button>
+            <button type="submit">Dodaj</button>
           </div>
         </form>
       ) : (
         <div className="new-expense__controls__cancel">
           <div className="new-expense__actions">
             <button type="button" onClick={handleAddNewExpense}>
-              Add New Expense
+              Dodaj novi trošak
             </button>
           </div>
         </div>

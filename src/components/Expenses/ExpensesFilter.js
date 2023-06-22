@@ -12,7 +12,7 @@ const ExpensesFilter = ({ onYearChange, selected }) => {
   return (
     <div className="expenses-filter">
       <div className="expenses-filter__control">
-        <label>Filter by year</label>
+        <label>Filtriraj po godini</label>
         <select value={selected} onChange={handleFilter}>
           <option value="2023">2023</option>
           <option value="2022">2022</option>
