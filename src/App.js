@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 
+// app link: https://expenses-app-gs.netlify.app/
+
 const DUMMY_EXPENSES = [
   {
     id: "e1",
